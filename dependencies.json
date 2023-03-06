@@ -1,6 +1,6 @@
 {
     "*": {
-        ">=3000": [
+        ">=4096": [
             "pygments",
             "pyyaml",
             "python-markdown",

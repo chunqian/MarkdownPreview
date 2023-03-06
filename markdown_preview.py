@@ -195,28 +195,6 @@ class MarkdownPreviewListener(sublime_plugin.EventListener):
                     sublime.status_message('Markdown preview file updated')
 
 
-class MarkdownCheatsheetCommand(sublime_plugin.TextCommand):
-    """Open our markdown cheat sheet."""
-
-    def run(self, edit):
-        """Execute command."""
-        lines = '\n'.join(load_resource('samples/sample.md').splitlines())
-        view = new_view(self.view.window(), lines, scratch=True)
-        view.set_name("Markdown Cheatsheet")
-
-        # Set syntax file
-        syntax_files = [
-            "Packages/Markdown Extended/Syntaxes/Markdown Extended.tmLanguage",
-            "Packages/Markdown/Markdown.tmLanguage"
-        ]
-        for file in syntax_files:
-            if exists_resource(file):
-                view.set_syntax_file(file)
-                break  # Done if any syntax is set.
-
-        sublime.status_message('Markdown cheat sheet opened')
-
-
 class Compiler(object):
     """Base compiler that does the markdown converting."""
 

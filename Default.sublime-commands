@@ -26,11 +26,5 @@
         "args": {
             "target": "clipboard"
         }
-    },
-
-    {
-        "caption": "Markdown Preview: Open Markdown Cheat sheet",
-        "command": "markdown_cheatsheet",
-        "args": {}
     }
 ]

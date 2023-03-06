@@ -291,7 +291,7 @@
         Will not work if the GitHub parser or GitLab parser are used
         without a valid access token.
     */
-    "enable_autoreload": true,
+    "enable_autoreload": false,
 
     /*
         Sets the supported filetypes for auto-reload on save.
@@ -365,7 +365,7 @@
     /*
         Strips the YAML front matter header and converts title to a heading.
     */
-    "strip_yaml_front_matter": false,
+    "strip_yaml_front_matter": true,
 
     /*
         Sets visibility of the build output panel when building with CMD+B.
